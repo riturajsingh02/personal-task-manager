@@ -1,0 +1,224 @@
+.card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition), box-shadow var(--transition), opacity var(--transition);
+}
+
+.card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+.card.completed {
+  opacity: 0.6;
+}
+
+.card.overdue {
+  border-color: rgba(248, 113, 113, 0.4);
+  background: linear-gradient(to right, rgba(248, 113, 113, 0.03), transparent);
+}
+
+.overdueStripe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--danger);
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 14px 14px 16px;
+}
+
+.dragHandle {
+  color: var(--text-muted);
+  cursor: grab;
+  padding: 2px 2px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: color var(--transition);
+  touch-action: none;
+}
+
+.dragHandle:hover {
+  color: var(--text-secondary);
+}
+
+.dragHandle:active {
+  cursor: grabbing;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1.5px solid var(--border-hover);
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  color: white;
+}
+
+.checkbox:hover {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.checkbox.checked {
+  background: var(--success);
+  border-color: var(--success);
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.priority {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.priorityHigh {
+  background: var(--danger-dim);
+  color: var(--danger);
+}
+
+.priorityMed {
+  background: var(--warning-dim);
+  color: var(--warning);
+}
+
+.priorityLow {
+  background: var(--success-dim);
+  color: var(--success);
+}
+
+.description {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.due {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.dueOverdue {
+  color: var(--danger);
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.actionBtn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+
+.actionBtn:hover {
+  background: var(--surface-2);
+  color: var(--text-primary);
+}
+
+.deleteBtn:hover {
+  background: var(--danger-dim);
+  color: var(--danger);
+}
+
+.confirmRow {
+  display: flex;
+  gap: 4px;
+}
+
+.confirmYes, .confirmNo {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.confirmYes {
+  background: var(--danger-dim);
+  color: var(--danger);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.confirmYes:hover {
+  background: var(--danger);
+  color: white;
+}
+
+.confirmNo {
+  background: var(--surface-2);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.confirmNo:hover {
+  color: var(--text-primary);
+}
