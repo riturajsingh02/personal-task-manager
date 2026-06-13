@@ -1,4 +1,6 @@
 import { useState, useMemo } from 'react'
+import { useTasks } from './hooks/useTasks'
+
 import StatsBar from './components/StatsBar'
 import SearchBar from './components/SearchBar'
 import TaskForm from './components/TaskForm'
