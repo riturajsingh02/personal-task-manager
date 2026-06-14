@@ -4,7 +4,7 @@ A modern, responsive, and user-friendly Personal Task Manager built with React a
 
 ## 🚀 Live Demo
 
-**Live Website:** https://lucky-kitten-817f37.netlify.app/
+**Live Website:** https://personal-task-manager-mjhfh8610-rituraj-s-projects6.vercel.app
 
 ---
 
@@ -113,53 +113,4 @@ The application can be used to manage daily activities such as:
 npm run build
 ```
 
-The optimized production files will be generated inside the `dist` folder.
-
----
-
-## 🌐 Deployment
-
-This project can be easily deployed on:
-
-* Netlify
-* Vercel
-* GitHub Pages
-
-### Netlify Build Settings
-
-```text
-Build Command: npm run build
-Publish Directory: dist
-```
-
----
-
-## 🎯 Future Enhancements
-
-* User Authentication
-* Dark Mode Support
-* Task Categories & Filtering
-* Drag-and-Drop Task Management
-* Cloud Database Integration
-* Task Reminders & Notifications
-* Task Search Functionality
-
----
-
-## 🤝 Contributing
-
-Contributions, suggestions, and feature requests are welcome. Feel free to fork the repository and submit a pull request.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-**Rituraj Singh Rana**
-
-GitHub: https://github.com/riturajsingh02
+The o

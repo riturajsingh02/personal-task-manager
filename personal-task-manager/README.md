@@ -3,9 +3,9 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-A beautiful, responsive, and fully functional Personal Task Manager built with React and Tailwind CSS. It helps you stay organized by tracking your active, completed, and overdue tasks, all saved locally in your browser so you never lose your data!
+A beautiful, responsive, and fully functional Personal Task Manager built with React and Tailwind CSS. It helps you stay organized by tracking your active, completed, and overdue tasks. Data is persisted via a custom Node.js/Express backend!
 
-🚀 **Live Demo:** [https://lucky-kitten-817f37.netlify.app/](https://lucky-kitten-817f37.netlify.app/)
+🚀 **Live Demo:** [https://personal-task-manager-git-main-rituraj-s-projects6.vercel.app](https://personal-task-manager-git-main-rituraj-s-projects6.vercel.app)
 
 ## ✨ Features
 
@@ -62,6 +62,13 @@ Ensure you have Node.js installed on your machine.
 
 ## 📂 Project Structure
 The project is structured with both frontend and backend code residing in the same repository for simplicity. The React app is built with Vite in the root directory, while the backend API is served by `server.js` and stores data in `tasks.json`.
+
+## 🌍 Deployment
+This project is deployed using a decoupled architecture from a single repository:
+*   **Frontend:** Deployed on [Vercel](https://vercel.com/) (configured to build the React application from the root directory).
+*   **Backend:** Deployed as a Web Service on [Render](https://render.com/) running the `server.js` Node/Express API.
+
+*Note: Because Render's free tier uses an ephemeral file system, the local `tasks.json` database may reset when the server spins down. For permanent production storage, swapping to MongoDB is recommended.*
 
 ## 🔌 API Documentation
 
