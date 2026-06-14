@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 
-const API_URL = 'http://localhost:3001/api/tasks'
+// Replace the placeholder below with your actual Render URL:
+const API_URL = 'https://task-manager-backend-YOUR-URL.onrender.com/api/tasks'
 
 export function useTasks() {
   const [tasks, setTasks] = useState([])
