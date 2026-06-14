@@ -1,36 +1,46 @@
-📝 Personal Task Manager
+# 📝 Personal Task Manager
 
-A modern and responsive Personal Task Manager built with React and Tailwind CSS. This application helps users organize daily tasks, track progress, manage deadlines, and stay productive with an intuitive user interface.
+A modern, responsive, and user-friendly Personal Task Manager built with React and Tailwind CSS. This application helps users organize daily tasks, manage deadlines, track progress, and stay productive through a clean and intuitive interface.
 
-🚀 Features
+## 🚀 Live Demo
 
- ➕ Add new tasks with title, due date, and priority level
-  ✅ Mark tasks as completed
-  🗑️ Delete tasks instantly
-  📊 Dashboard with task statistics
-  🔴 Automatic overdue task detection
-  💾 Data persistence using browser Local Storage
-  🎨 Clean and responsive UI
-  📱 Mobile-friendly design
+**Live Website:** https://lucky-kitten-817f37.netlify.app/
 
-🛠️ Tech Stack
+---
 
-Frontend
+## ✨ Features
+
+* ➕ Add new tasks with title, due date, and priority level
+* ✅ Mark tasks as completed
+* 🗑️ Delete tasks instantly
+* 📊 Dashboard displaying task statistics
+* 🔴 Automatic overdue task detection
+* 💾 Data persistence using Browser Local Storage
+* 🎨 Modern and responsive user interface
+* 📱 Mobile-friendly design
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
 
 * React.js
 * JavaScript (ES6+)
 * Tailwind CSS
 
-State Management
+### State Management
 
 * React Hooks (`useState`, `useEffect`, `useCallback`)
 * Custom Hook (`useTasks`)
 
-Storage
+### Storage
 
 * Browser Local Storage API
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
 
 ```text
 personal-task-manager/
@@ -48,22 +58,24 @@ personal-task-manager/
 └── README.md
 ```
 
- ⚙️ Installation
+---
 
-Clone the Repository
+## ⚙️ Installation & Setup
+
+### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/personal-task-manager.git
+git clone https://github.com/riturajsingh02/personal-task-manager.git
 cd personal-task-manager
 ```
 
-Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-Start Development Server
+### Start Development Server
 
 ```bash
 npm run dev
@@ -75,48 +87,79 @@ Open your browser and visit:
 http://localhost:5173
 ```
 
-🏗️ Build for Production
+---
+
+## 📋 Sample Daily Tasks
+
+The application can be used to manage daily activities such as:
+
+### 1. Morning Exercise
+
+**Description:** Complete a 30-minute workout session to stay healthy and energized throughout the day.
+
+### 2. Study React Development
+
+**Description:** Spend at least 2 hours learning React concepts, building components, or working on projects.
+
+### 3. Complete Project Tasks
+
+**Description:** Finish assigned project work, fix bugs, and update progress before the end of the day.
+
+---
+
+## 🏗️ Build for Production
 
 ```bash
 npm run build
 ```
 
-The production-ready files will be generated inside the `dist` folder.
+The optimized production files will be generated inside the `dist` folder.
 
-🌐 Deployment
+---
 
-This project can be deployed easily using:
+## 🌐 Deployment
+
+This project can be easily deployed on:
 
 * Netlify
 * Vercel
 * GitHub Pages
 
-Netlify Build Settings
+### Netlify Build Settings
 
 ```text
 Build Command: npm run build
 Publish Directory: dist
 ```
 
-🎯 Future Enhancements
+---
+
+## 🎯 Future Enhancements
 
 * User Authentication
-* Dark Mode
-* Task Categories
-* Drag and Drop Task Management
+* Dark Mode Support
+* Task Categories & Filtering
+* Drag-and-Drop Task Management
 * Cloud Database Integration
-* Task Reminders and Notifications
+* Task Reminders & Notifications
+* Task Search Functionality
 
-🤝 Contributing
+---
 
-Contributions are welcome. Feel free to fork the repository and submit a pull request.
+## 🤝 Contributing
 
-📜 License
+Contributions, suggestions, and feature requests are welcome. Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📜 License
 
 This project is licensed under the MIT License.
 
-👨‍💻 Author
+---
 
-Developed by [Rituraj Singh Rana]
+## 👨‍💻 Author
+
+**Rituraj Singh Rana**
 
 GitHub: https://github.com/riturajsingh02
