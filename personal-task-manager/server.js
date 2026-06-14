@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { v4: uuidv4 } = require('uuid');
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
@@ -15,7 +15,7 @@ app.use(express.json());
 // Default tasks to fall back to if file doesn't exist
 const defaultTasks = [
   {
-    id: uuidv4(),
+    id: crypto.randomUUID(),
     title: 'Set up project repository',
     description: 'Initialize Git repo and push initial commit',
     priority: 'high',
@@ -25,7 +25,7 @@ const defaultTasks = [
     order: 0,
   },
   {
-    id: uuidv4(),
+    id: crypto.randomUUID(),
     title: 'Design system components',
     description: 'Build reusable button, input, and card components',
     priority: 'medium',
@@ -35,7 +35,7 @@ const defaultTasks = [
     order: 1,
   },
   {
-    id: uuidv4(),
+    id: crypto.randomUUID(),
     title: 'Write unit tests',
     description: 'Cover core utilities with Jest',
     priority: 'low',
@@ -68,6 +68,11 @@ function saveTasks(tasksToSave) {
   }
 }
 
+// Root route for a friendly welcome message
+app.get('/', (req, res) => {
+  res.send('✅ Personal Task Manager Backend API is running!');
+});
+
 // Get all tasks
 app.get('/api/tasks', (req, res) => {
   const tasks = readTasks();
@@ -78,7 +83,7 @@ app.get('/api/tasks', (req, res) => {
 app.post('/api/tasks', (req, res) => {
   const tasks = readTasks();
   const newTask = {
-    id: uuidv4(),
+    id: crypto.randomUUID(),
     ...req.body,
     createdAt: new Date().toISOString(),
   };
