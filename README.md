@@ -119,4 +119,4 @@ This project is licensed under the MIT License.
 
 Developed by [Rituraj Singh Rana]
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/riturajsingh02
