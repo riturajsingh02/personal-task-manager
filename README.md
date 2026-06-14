@@ -6,7 +6,7 @@ A modern, responsive, and user-friendly Personal Task Manager built with React, 
 
 ### Frontend
 
-https://personal-task-manager-git-main-rituraj-s-projects6.vercel.app
+https://personal-task-manager-git-main-rituraj-s-projects6.vercel.app/
 
 ### Backend API
 
@@ -157,7 +157,7 @@ The optimized production files will be generated inside the `dist` folder.
 
 ### Frontend (Vercel)
 
-https://personal-task-manager-git-main-rituraj-s-projects6.vercel.app
+https://personal-task-manager-git-main-rituraj-s-projects6.vercel.app/
 
 ### Backend (Render)
 
