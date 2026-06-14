@@ -1,10 +1,16 @@
 # 📝 Personal Task Manager
 
-A modern, responsive, and user-friendly Personal Task Manager built with React and Tailwind CSS. This application helps users organize daily tasks, manage deadlines, track progress, and stay productive through a clean and intuitive interface.
+A modern, responsive, and user-friendly Personal Task Manager built with React, Tailwind CSS, Node.js, and Express. This application helps users organize daily tasks, manage deadlines, track progress, and stay productive through a clean and intuitive interface.
 
 ## 🚀 Live Demo
 
-**Live Website:** https://lucky-kitten-817f37.netlify.app/
+### Frontend
+
+https://personal-task-manager-mjhfh8610-rituraj-s-projects6.vercel.app
+
+### Backend API
+
+https://personal-task-manager-qadv.onrender.com
 
 ---
 
@@ -15,9 +21,10 @@ A modern, responsive, and user-friendly Personal Task Manager built with React a
 * 🗑️ Delete tasks instantly
 * 📊 Dashboard displaying task statistics
 * 🔴 Automatic overdue task detection
-* 💾 Data persistence using Browser Local Storage
+* 💾 Persistent task storage through backend API
 * 🎨 Modern and responsive user interface
 * 📱 Mobile-friendly design
+* 🔄 Real-time synchronization between frontend and backend
 
 ---
 
@@ -28,15 +35,21 @@ A modern, responsive, and user-friendly Personal Task Manager built with React a
 * React.js
 * JavaScript (ES6+)
 * Tailwind CSS
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
 
 ### State Management
 
 * React Hooks (`useState`, `useEffect`, `useCallback`)
 * Custom Hook (`useTasks`)
 
-### Storage
+### Data Storage
 
-* Browser Local Storage API
+* JSON-based storage (`tasks.json`)
 
 ---
 
@@ -53,6 +66,8 @@ personal-task-manager/
 │   ├── App.jsx
 │   └── main.jsx
 │
+├── server.js
+├── tasks.json
 ├── package.json
 ├── vite.config.js
 └── README.md
@@ -75,13 +90,25 @@ cd personal-task-manager
 npm install
 ```
 
-### Start Development Server
+### Start Backend Server
+
+```bash
+node server.js
+```
+
+Backend runs on:
+
+```text
+http://localhost:3001
+```
+
+### Start Frontend
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit:
+Frontend runs on:
 
 ```text
 http://localhost:5173
@@ -89,21 +116,30 @@ http://localhost:5173
 
 ---
 
-## 📋 Sample Daily Tasks
+## 🔌 API Endpoints
 
-The application can be used to manage daily activities such as:
+| Method | Endpoint         | Description             |
+| ------ | ---------------- | ----------------------- |
+| GET    | `/api/tasks`     | Fetch all tasks         |
+| POST   | `/api/tasks`     | Create a new task       |
+| PUT    | `/api/tasks/:id` | Update an existing task |
+| DELETE | `/api/tasks/:id` | Delete a task           |
+
+---
+
+## 📋 Sample Daily Tasks
 
 ### 1. Morning Exercise
 
-**Description:** Complete a 30-minute workout session to stay healthy and energized throughout the day.
+Complete a 30-minute workout session to stay healthy and energized throughout the day.
 
 ### 2. Study React Development
 
-**Description:** Spend at least 2 hours learning React concepts, building components, or working on projects.
+Spend at least 2 hours learning React concepts, building components, or working on projects.
 
 ### 3. Complete Project Tasks
 
-**Description:** Finish assigned project work, fix bugs, and update progress before the end of the day.
+Finish assigned project work, fix bugs, and update progress before the end of the day.
 
 ---
 
@@ -119,18 +155,13 @@ The optimized production files will be generated inside the `dist` folder.
 
 ## 🌐 Deployment
 
-This project can be easily deployed on:
+### Frontend (Vercel)
 
-* Netlify
-* Vercel
-* GitHub Pages
+https://personal-task-manager-mjhfh8610-rituraj-s-projects6.vercel.app
 
-### Netlify Build Settings
+### Backend (Render)
 
-```text
-Build Command: npm run build
-Publish Directory: dist
-```
+https://personal-task-manager-qadv.onrender.com
 
 ---
 
@@ -140,7 +171,7 @@ Publish Directory: dist
 * Dark Mode Support
 * Task Categories & Filtering
 * Drag-and-Drop Task Management
-* Cloud Database Integration
+* Database Integration (MongoDB/PostgreSQL)
 * Task Reminders & Notifications
 * Task Search Functionality
 
